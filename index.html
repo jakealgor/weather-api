@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="us-en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X_UA-Compatible" content="ie=edge">
+        <title>Weather Report</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="title-header container-fluid">
+                <h1 id="page-title">Weather Report</h1>
+            </header>
+            <div class="row">
+                <div class="col-md-12 rounded city-container">
+                    <h3>Search Your City</h3>
+                    <div class="input-group mb-3">
+                        <input type="text" class="city-search form-control" placeholder="City Name Here" aria-label="City" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                        <button class="search-btn btn btn-primary" type="button" id="button-addon2">Search</button>
+                        </div>
+                    </div>
+                    <div class="col-12" id="city-button-container">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="city-display">
+                    </div>
+                    <div id="uv-index">
+                    </div>
+                    <h2>Future Forecast:</h2>
+                    <div class="row" id="future-weather-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.1/moment.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="javascript.js"></script>
+    </body>
+</html>
